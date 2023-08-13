@@ -23,6 +23,7 @@ body {
   height: 10vh;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 .navbar h1 {
   color: white;
@@ -42,28 +43,46 @@ body {
   height: 10vh;
   width: 70%;
 }
-.headerOptions p {
-  color: white;
-  font-weight: bold;
-}
+
 .headerOptions a {
   text-decoration: none;
   color: white;
   font-size: 25px;
   font-weight: bold;
   transition: font-size 2s ease;
+  opacity: 70%;
 }
 .headerOptions span {
-  color: #5918df;
+  color: rgba(128, 128, 128, 0.308);
 }
 .topName h1:hover {
   font-size: 55px;
 }
 .headerOptions a:hover {
   font-size: 50px;
+  opacity: 100%;
 }
 
 .topName {
   display: flex;
   align-items: center;
+}
+.startHeader {
+  color: white;
+  height: 25vh;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 15vw;
+}
+.startHeader h1 {
+  font-weight: bold;
+  font-size: 55px;
+}
+.startHeader p {
+  font-size: 25px;
+}
+.pink {
+  color: #5918df;
 }
