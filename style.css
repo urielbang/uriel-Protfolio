@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .container {
   display: flex;
@@ -9,7 +10,39 @@ body {
 }
 .header {
   width: 100%;
-  background-image: url(fotos/89787.jpg);
+  background-image: url(fotos/pexels-alex-conchillos-3745234.jpg);
   background-size: cover;
   height: 100vh;
+  display: flex;
+}
+.nameTop {
+  display: flex;
+  align-items: baseline;
+
+  height: 10vh;
+  width: 87%;
+}
+.nameTop h1 {
+  color: white;
+}
+.nameTop span {
+  color: gray;
+  font-size: 30px;
+}
+.headerOptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 10vh;
+  width: 70%;
+}
+.headerOptions p {
+  color: white;
+  font-weight: bold;
+}
+.headerOptions a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
