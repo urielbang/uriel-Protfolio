@@ -10,23 +10,28 @@ body {
 }
 .header {
   width: 100%;
-  background-image: url(fotos/pexels-alex-conchillos-3745234.jpg);
+  background-image: url(fotos/backgrond.webp);
   background-size: cover;
-  height: 100vh;
+  height: 120vh;
   display: flex;
+  flex-direction: column;
 }
-.nameTop {
+.navbar {
   display: flex;
   align-items: baseline;
 
   height: 10vh;
-  width: 87%;
+  width: 100%;
+  justify-content: space-between;
 }
-.nameTop h1 {
+.navbar h1 {
   color: white;
+  font-size: 30px;
+
+  transition: font-size 2s ease;
 }
-.nameTop span {
-  color: gray;
+.navbar span {
+  color: #5918df;
   font-size: 30px;
 }
 .headerOptions {
@@ -44,5 +49,21 @@ body {
 .headerOptions a {
   text-decoration: none;
   color: white;
+  font-size: 25px;
   font-weight: bold;
+  transition: font-size 2s ease;
+}
+.headerOptions span {
+  color: #5918df;
+}
+.topName h1:hover {
+  font-size: 55px;
+}
+.headerOptions a:hover {
+  font-size: 50px;
+}
+
+.topName {
+  display: flex;
+  align-items: center;
 }
