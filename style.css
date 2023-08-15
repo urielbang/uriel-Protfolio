@@ -1,3 +1,7 @@
+:root {
+  --cube--width: 300px;
+  --translateZ: 150px;
+}
 body {
   margin: 0;
   /* font-family: Arial, Helvetica, sans-serif; */
@@ -126,16 +130,26 @@ header {
   align-items: center;
   height: 100%;
   width: 100%;
+  margin-top: 60vh;
 }
 .conatine {
   max-width: 1000px;
   margin: 0 auto;
 }
+.cube-container .cube {
+  width: var(--cube--width);
+  height: var(--cube--width);
+  transform-style: preserve-3d;
+}
+.cube-container {
+  perspective: 1000px;
+}
 .cube-container .cube-face {
-  width: 300px;
-  height: 300px;
+  width: var(--cube--width);
+  height: var(--cube--width);
   font-size: 30px;
-  background: yellow;
+  position: absolute;
+
   color: black;
   font-weight: bold;
   display: flex;
@@ -143,20 +157,20 @@ header {
   justify-content: center;
 }
 .cube-container .front {
-  background: orangered;
+  transform: translateZ(var(--translateZ));
 }
 .cube-container .back {
-  background: greenyellow;
+  transform: rotateY(180deg) translateZ(var(--translateZ));
 }
 .cube-container .left {
-  background: rgb(0, 157, 255);
+  transform: rotateY(-90deg) translateZ(var(--translateZ));
 }
 .cube-container .right {
-  background: lightsalmon;
+  transform: rotateY(90deg) translateZ(var(--translateZ));
 }
 .cube-container .top {
-  background: purple;
+  transform: rotateX(90deg) translateZ(var(--translateZ));
 }
 .cube-container .bottom {
-  background: lightskyblue;
+  transform: rotateX(-90deg) translateZ(var(--translateZ));
 }
