@@ -1,0 +1,45 @@
+.conatine {
+  max-width: 1000px;
+  width: 60vw;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+}
+.cube-container .cube {
+  width: var(--cube--width);
+  height: var(--cube--width);
+  transform-style: preserve-3d;
+}
+.cube-container {
+  perspective: 1000px;
+}
+.cube-container .cube-face {
+  width: var(--cube--width);
+  height: var(--cube--width);
+  font-size: 30px;
+  position: absolute;
+
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cube-container .front {
+  transform: translateZ(var(--translateZ));
+}
+.cube-container .back {
+  transform: rotateY(180deg) translateZ(var(--translateZ));
+}
+.cube-container .left {
+  transform: rotateY(-90deg) translateZ(var(--translateZ));
+}
+.cube-container .right {
+  transform: rotateY(90deg) translateZ(var(--translateZ));
+}
+.cube-container .top {
+  transform: rotateX(90deg) translateZ(var(--translateZ));
+}
+.cube-container .bottom {
+  transform: rotateX(-90deg) translateZ(var(--translateZ));
+}

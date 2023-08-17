@@ -10,12 +10,14 @@ const handleMouseMove = (event) => {
   rotateY = (mouseX / window.innerWidth - 0.5) * rotationValue;
   cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
 };
-
 window.addEventListener("mousemove", handleMouseMove);
+
+$(document).ready(function () {
+  $("#mario").load("mario.html");
+});
 
 const h = document.querySelector("#h");
 const b = document.body;
-
 let base = (e) => {
   var x = e.pageX / window.innerWidth - 0.5;
   var y = e.pageY / window.innerHeight - 0.5;
